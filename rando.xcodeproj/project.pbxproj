@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		739E50CC88C8A45A26ACD668 /* Pods_rando.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8C0F0B09AA3FC597620796 /* Pods_rando.framework */; };
 		A5F8BD05268D4A9C007BE3D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8BD04268D4A9C007BE3D6 /* AppDelegate.swift */; };
 		A5F8BD07268D4A9C007BE3D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8BD06268D4A9C007BE3D6 /* SceneDelegate.swift */; };
 		A5F8BD09268D4A9C007BE3D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F8BD08268D4A9C007BE3D6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780612543C37A5783C90FB58 /* Pods-rando.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rando.debug.xcconfig"; path = "Target Support Files/Pods-rando/Pods-rando.debug.xcconfig"; sourceTree = "<group>"; };
 		A5F8BD01268D4A9C007BE3D6 /* rando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F8BD04268D4A9C007BE3D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5F8BD06268D4A9C007BE3D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A5F8BD0D268D4A9C007BE3D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5F8BD10268D4A9C007BE3D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5F8BD12268D4A9C007BE3D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8C389D8E89ABA95632744D4 /* Pods-rando.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rando.release.xcconfig"; path = "Target Support Files/Pods-rando/Pods-rando.release.xcconfig"; sourceTree = "<group>"; };
+		CC8C0F0B09AA3FC597620796 /* Pods_rando.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rando.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739E50CC88C8A45A26ACD668 /* Pods_rando.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FC80CE1586A217582B11AF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				780612543C37A5783C90FB58 /* Pods-rando.debug.xcconfig */,
+				A8C389D8E89ABA95632744D4 /* Pods-rando.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A5F8BCF8268D4A9C007BE3D6 = {
 			isa = PBXGroup;
 			children = (
 				A5F8BD03268D4A9C007BE3D6 /* rando */,
 				A5F8BD02268D4A9C007BE3D6 /* Products */,
+				6FC80CE1586A217582B11AF6 /* Pods */,
+				CEE816E77229AF88B4F8D3F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +72,47 @@
 		A5F8BD03268D4A9C007BE3D6 /* rando */ = {
 			isa = PBXGroup;
 			children = (
+				A5F8BD1B268FA233007BE3D6 /* Models */,
+				A5F8BD1C268FA23B007BE3D6 /* Views */,
+				A5F8BD1D268FA240007BE3D6 /* Controllers */,
 				A5F8BD04268D4A9C007BE3D6 /* AppDelegate.swift */,
 				A5F8BD06268D4A9C007BE3D6 /* SceneDelegate.swift */,
-				A5F8BD08268D4A9C007BE3D6 /* ViewController.swift */,
-				A5F8BD0A268D4A9C007BE3D6 /* Main.storyboard */,
 				A5F8BD0D268D4A9C007BE3D6 /* Assets.xcassets */,
 				A5F8BD0F268D4A9C007BE3D6 /* LaunchScreen.storyboard */,
 				A5F8BD12268D4A9C007BE3D6 /* Info.plist */,
 			);
 			path = rando;
+			sourceTree = "<group>";
+		};
+		A5F8BD1B268FA233007BE3D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A5F8BD1C268FA23B007BE3D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8BD0A268D4A9C007BE3D6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5F8BD1D268FA240007BE3D6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5F8BD08268D4A9C007BE3D6 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CEE816E77229AF88B4F8D3F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC8C0F0B09AA3FC597620796 /* Pods_rando.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F8BD15268D4A9C007BE3D6 /* Build configuration list for PBXNativeTarget "rando" */;
 			buildPhases = (
+				275421C275B96EEEB192D772 /* [CP] Check Pods Manifest.lock */,
 				A5F8BCFD268D4A9C007BE3D6 /* Sources */,
 				A5F8BCFE268D4A9C007BE3D6 /* Frameworks */,
 				A5F8BCFF268D4A9C007BE3D6 /* Resources */,
+				C5A7B8CFC4639FDDB2FF8A3D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +181,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		275421C275B96EEEB192D772 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rando-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A7B8CFC4639FDDB2FF8A3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rando/Pods-rando-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rando/Pods-rando-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rando/Pods-rando-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5F8BCFD268D4A9C007BE3D6 /* Sources */ = {
@@ -283,6 +375,7 @@
 		};
 		A5F8BD16268D4A9C007BE3D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 780612543C37A5783C90FB58 /* Pods-rando.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +395,7 @@
 		};
 		A5F8BD17268D4A9C007BE3D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C389D8E89ABA95632744D4 /* Pods-rando.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

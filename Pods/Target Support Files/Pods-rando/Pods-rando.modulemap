@@ -1,0 +1,6 @@
+framework module Pods_rando {
+  umbrella header "Pods-rando-umbrella.h"
+
+  export *
+  module * { export * }
+}
