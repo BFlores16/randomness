@@ -8,7 +8,7 @@
 import UIKit
 import SideMenu
 
-class HomeViewController: UIViewController {
+class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
