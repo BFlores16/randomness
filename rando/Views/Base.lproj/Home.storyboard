@@ -41,10 +41,10 @@
             </objects>
             <point key="canvasLocation" x="814" y="-1025"/>
         </scene>
-        <!--Features View Controller-->
+        <!--Features Table View Controller-->
         <scene sceneID="o0Z-AD-GOA">
             <objects>
-                <viewController id="qPO-dt-AlA" customClass="FeaturesViewController" customModule="rando" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qPO-dt-AlA" customClass="FeaturesTableViewController" customModule="rando" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XPN-gR-o0h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,6 +64,47 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BBr-X9-cgD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeatureCell" id="BWN-ke-oqG" customClass="FeatureTableViewCell" customModule="rando" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWN-ke-oqG" id="cOi-g3-BIl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3sB-bY-Oiz">
+                                                    <rect key="frame" x="20" y="10" width="111.5" height="50"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mdk-rF-pMd">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="4m6-H7-mfn"/>
+                                                                <constraint firstAttribute="width" constant="50" id="IiU-Ch-0rW"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73O-a6-F8e">
+                                                            <rect key="frame" x="70" y="0.0" width="41.5" height="50"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3sB-bY-Oiz" firstAttribute="top" secondItem="cOi-g3-BIl" secondAttribute="top" constant="10" id="DXb-Zy-a5U"/>
+                                                <constraint firstItem="3sB-bY-Oiz" firstAttribute="centerY" secondItem="cOi-g3-BIl" secondAttribute="centerY" id="DyZ-om-20L"/>
+                                                <constraint firstItem="3sB-bY-Oiz" firstAttribute="leading" secondItem="cOi-g3-BIl" secondAttribute="leading" constant="20" id="f4h-SO-QGS"/>
+                                                <constraint firstAttribute="bottom" secondItem="3sB-bY-Oiz" secondAttribute="bottom" constant="10" id="iGg-Rn-ovS"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AkZ-Lb-gal"/>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.92156862750000001" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
