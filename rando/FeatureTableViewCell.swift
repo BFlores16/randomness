@@ -9,6 +9,9 @@ import UIKit
 
 class FeatureTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var picture: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
